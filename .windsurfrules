@@ -36,3 +36,5 @@
 - Code is formatted with Prettier
 - Code is linted with ESLint
 - Types are checked with `npm run typecheck`
+
+# Project Specific Rules
