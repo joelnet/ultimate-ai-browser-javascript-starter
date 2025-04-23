@@ -35,6 +35,21 @@ A modern JavaScript application built with Vite, designed for AI-powered develop
    npm install
    ```
 
+### VSCode Recommendations
+
+For the best development experience with this project in Visual Studio Code:
+
+1. Install the following extensions:
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+2. Configure format on save with Prettier:
+   - Open VSCode Settings (File > Preferences > Settings or `Ctrl+,`)
+   - Search for "format on save" and enable it
+   - Search for "default formatter" and select "Prettier - Code formatter"
+
+These settings will ensure your code is automatically formatted according to the project's Prettier configuration whenever you save a file.
+
 ### Development
 
 Start the development server:
