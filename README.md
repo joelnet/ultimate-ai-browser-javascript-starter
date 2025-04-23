@@ -5,12 +5,12 @@ A modern JavaScript application built with Vite, designed for AI-powered develop
 ## Features
 
 - AI first, coding environment
-- `.windsurfrules` file for AI guidance. This keeps AI on track based on our preferences.
-- JSDoc types and type checking because AI loves types
-- ESLint will raise errors, alerting the AI of mistakes early
+- `.windsurfrules` file for AI guidance. This keeps AI on track based on our preferences
+- JSDoc types and type checking keeps AI on track and reduces hallucinations
+- ESLint will raise errors, alerting the AI of mistakes and preventing hallucinations
 - Prettier and ESlint configured to work together
 - GitHub Pages deployment ready (builds to `docs` directory)
-- Jest testing framework
+- Jest testing framework configured to work with type=module
 - Husky for pre-commit hooks. This will make sure the code is checked before committing
 
 ## Getting Started
@@ -40,6 +40,7 @@ A modern JavaScript application built with Vite, designed for AI-powered develop
 For the best development experience with this project in Visual Studio Code:
 
 1. Install the following extensions:
+
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
@@ -135,8 +136,9 @@ npm run test
 
 - **Test Location**: Place test files in a `__tests__` directory adjacent to the files being tested
 - **Naming Convention**: Name test files with the `.test.js` suffix (e.g., `messageData.test.js` for `messageData.js`)
+- **Babel Configuration**: Babel is only used for Jest to enable modern JavaScript features in tests while maintaining compatibility
 
-See [src/lib/__tests__/messageData.test.js](src/lib/__tests__/messageData.test.js) for a practical example of testing patterns used in this project, including mocking and type assertions.
+See [src/lib/**tests**/messageData.test.js](src/lib/__tests__/messageData.test.js) for a practical example of testing patterns used in this project, including mocking and type assertions.
 
 For comprehensive documentation on Jest testing, refer to the [official Jest documentation](https://jestjs.io/docs/getting-started).
 
