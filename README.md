@@ -187,17 +187,23 @@ git commit -m "Your commit message" --no-verify
 ```
 ultimate-ai-browser-javascript-starter/
 ├── docs/                  # Production build output (for GitHub Pages)
+│   ├── assets/            # Compiled and optimized assets
+│   └── index.html         # Production HTML file
 ├── src/                   # Source files
+│   ├── lib/               # Library/utility functions
+│   │   ├── __tests__/     # Tests for library functions
+│   │   └── messageData.js # Example utility function
+│   ├── types/             # JSDoc type definitions
 │   ├── index.html         # Main HTML entry point
 │   └── main.js            # Main JavaScript entry point
-├── .eslintrc.yml          # ESLint configuration
-├── .prettierrc            # Prettier configuration
-├── babel.config.js        # Babel configuration
-├── jest.config.js         # Jest configuration
+├── .windsurfrules         # AI guidance rules for development
+├── babel.config.cjs       # Babel configuration for Jest
+├── eslint.config.js       # ESLint configuration
+├── jest.config.cjs        # Jest configuration
 ├── jsconfig.json          # JavaScript configuration
 ├── package.json           # Project dependencies and scripts
 ├── tsconfig.json          # TypeScript configuration (for JSDoc types)
-└── vite.config.js         # `Vite configuration
+└── vite.config.js         # Vite configuration
 ```
 
 ## License
