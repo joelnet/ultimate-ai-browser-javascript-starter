@@ -10,7 +10,11 @@
     "baseUrl": ".",
     "paths": {
       "/*": ["./*"]
-    }
+    },
+    "strict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true
   },
   "include": ["src/**/*.js"],
   "exclude": ["node_modules", "docs"]

@@ -22,7 +22,7 @@ A modern JavaScript application built with Vite, designed for AI-powered develop
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/ultimate-ai-browser-javascript-starter.git
+   git clone git@github.com:joelnet/ultimate-ai-browser-javascript-starter.git
    cd ultimate-ai-browser-javascript-starter
    ```
 
@@ -94,7 +94,7 @@ ultimate-ai-browser-javascript-starter/
 
 ## License
 
-ISC
+MIT
 
 ## Contributing
 
