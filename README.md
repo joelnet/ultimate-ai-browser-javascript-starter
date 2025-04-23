@@ -2,6 +2,8 @@
 
 A modern JavaScript application built with Vite, designed for AI-powered development and vibe coders.
 
+The goal is to have less AI hallucinations and output higher quality code output with less bugs.
+
 ## Features
 
 - AI first, coding environment
