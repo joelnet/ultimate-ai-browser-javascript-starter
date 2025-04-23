@@ -4,11 +4,14 @@ A modern JavaScript application built with Vite, designed for AI-powered develop
 
 ## Features
 
-- Modern JavaScript (ES Modules)
-- Fast development with Vite
+- AI first, coding environment
+- `.windsurfrules` file for AI guidance. This keeps AI on track based on our preferences.
+- JSDoc types and type checking because AI loves types
+- ESLint will raise errors, alerting the AI of mistakes early
+- Prettier and ESlint configured to work together
 - GitHub Pages deployment ready (builds to `docs` directory)
 - Jest testing framework
-- ESLint and Prettier for code quality
+- Husky for pre-commit hooks. This will make sure the code is checked before committing
 
 ## Getting Started
 
@@ -72,6 +75,32 @@ Fix linting issues automatically:
 
 ```bash
 npm run lint:fix
+```
+
+## Pre-commit Hooks
+
+This project uses [Husky](https://typicode.github.io/husky/) to run pre-commit hooks, ensuring code quality before each commit.
+
+### Current Pre-commit Hooks
+
+The following commands are automatically run before each commit:
+
+```bash
+npm run lint      # Checks code with ESLint
+npm run typecheck # Verifies JSDoc types with TypeScript
+npm run test      # Runs Jest tests
+```
+
+### Modifying Pre-commit Hooks
+
+To modify the pre-commit hooks, edit the `.husky/pre-commit` file.
+
+### Bypassing Pre-commit Hooks
+
+To bypass pre-commit hooks when committing (use sparingly):
+
+```bash
+git commit -m "Your commit message" --no-verify
 ```
 
 ## Project Structure
