@@ -70,6 +70,8 @@ npm run build
 
 This will generate optimized files in the `docs` directory, ready for deployment to GitHub Pages or other hosting services.
 
+You can view the live demo of this project at [https://joelnet.github.io/ultimate-ai-browser-javascript-starter/](https://joelnet.github.io/ultimate-ai-browser-javascript-starter/)
+
 ## Tips for Coding with AI
 
 This project is designed to work seamlessly with AI coding assistants. Here are some best practices to maximize your AI-powered development experience:
