@@ -55,6 +55,57 @@ npm run build
 
 This will generate optimized files in the `docs` directory, ready for deployment to GitHub Pages or other hosting services.
 
+## Tips for Coding with AI
+
+This project is designed to work seamlessly with AI coding assistants. Here are some best practices to maximize your AI-powered development experience:
+
+### Use an AI Coding Assistant
+
+Take advantage of AI-powered coding tools like:
+
+- [Windsurf](https://www.windsurf.io/) - AI-powered coding assistant
+- [Cursor](https://cursor.sh/) - Code editor with AI capabilities
+- [Claude Desktop](https://claude.ai/desktop) - Desktop app for AI-assisted development
+- Other AI-enabled coding environments
+
+These tools can significantly boost your productivity by providing intelligent code suggestions, automating repetitive tasks, and helping with debugging.
+
+### Commit Often
+
+AI assistants can make mistakes or misunderstand requirements. Committing your code frequently helps in:
+
+- Creating recovery points if AI-generated code introduces bugs
+- Maintaining a clear history of changes
+- Making it easier to revert specific changes without losing progress
+- Enabling more focused AI assistance on smaller, well-defined tasks
+
+### Use Types
+
+Types are crucial for effective AI coding:
+
+- JSDoc types (as used in this project) provide clear structure that AI can understand
+- Well-typed code leads to better code completion and suggestions
+- Types help AI catch potential errors before runtime
+- The `npm run typecheck` command verifies type correctness
+
+### Customize .windsurfrules
+
+The `.windsurfrules` file is your control center for AI behavior:
+
+- It contains project-specific guidelines that AI assistants will follow
+- Customize it to enforce coding standards, architectural decisions, and best practices
+- Add new rules as your project evolves to keep AI assistance aligned with your needs
+- Current rules include file organization, coding style preferences, and tooling instructions
+
+### Use Context7
+
+[Context7](https://context7.ai/) enhances AI coding capabilities:
+
+- Provides AI with up-to-date documentation for libraries and frameworks
+- Helps AI understand best practices for specific technologies
+- Reduces hallucinations by grounding AI responses in accurate documentation
+- Enables more precise and relevant code suggestions
+
 ## Testing
 
 Run tests with Jest:
@@ -62,6 +113,15 @@ Run tests with Jest:
 ```bash
 npm run test
 ```
+
+### Testing Recommendations
+
+- **Test Location**: Place test files in a `__tests__` directory adjacent to the files being tested
+- **Naming Convention**: Name test files with the `.test.js` suffix (e.g., `messageData.test.js` for `messageData.js`)
+
+See [src/lib/__tests__/messageData.test.js](src/lib/__tests__/messageData.test.js) for a practical example of testing patterns used in this project, including mocking and type assertions.
+
+For comprehensive documentation on Jest testing, refer to the [official Jest documentation](https://jestjs.io/docs/getting-started).
 
 ## Linting
 
